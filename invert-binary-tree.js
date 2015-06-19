@@ -11,7 +11,6 @@
  */
 
 // recursive
-
 var invertTree = function(root) {
     if (!root) {
         return root;
