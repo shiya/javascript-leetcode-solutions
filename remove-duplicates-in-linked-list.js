@@ -10,11 +10,11 @@
  * @return {ListNode}
  */
 var deleteDuplicates = function(head) {
-    if (!head || !head.next) {
+    if (!head) {
         return head;
     }
     var node = head;
-    while (node && node.next) {
+    while (!!node.next) {
         if (node.val === node.next.val) {
             node.next = node.next.next;
         } else {

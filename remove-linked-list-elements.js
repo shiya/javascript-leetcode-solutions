@@ -10,10 +10,11 @@
  * @param {number} val
  * @return {ListNode}
  */
+
+ // cases to consider:
+ // 1. when head.val === val
+ // 2. when there are multiple vals
 var removeElements = function(head, val) {
-    if (!head) {
-        return null;
-    }
     var dummy = new ListNode(0);
     dummy.next = head;
     var pre = dummy;
